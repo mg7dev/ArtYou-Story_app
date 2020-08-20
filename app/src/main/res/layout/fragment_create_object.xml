@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentCreateObject">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pb_create_object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="2dp"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_story_fragment_return"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/return_black"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:padding="5dp"
+                        android:text="@string/returnn"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_story_fragment_top_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/ic_return_right"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:padding="5dp"
+                        android:text="@string/next"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_create_object"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_story_frag_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="1dp"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_story_frag_select_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/blueAccent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginRight="58dp"
+                            android:fontFamily="@font/circular_std_book"
+                            android:text="@string/complete_your_history"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="58dp"
+                            android:layout_marginRight="58dp"
+                            android:layout_marginBottom="68dp"
+                            android:fontFamily="@font/circular_std_book"
+                            android:text="@string/choose_a_image_nof_an_artwork_a_book_or_a_memory"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_collection_create_object"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/size_collect_transparent"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:gravity="center_vertical"
+                        android:text="@string/or_choose_a_object_from_collect"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_titel_create_object"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/circular_std_book"
+                        android:hint="@string/title"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_object_type_create_object"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:fontFamily="@font/circular_std_book"
+                        android:hint="@string/this_object_is_a"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/tv_next_object_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:drawableLeft="@drawable/ic_return_right"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Next"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentThankYou">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_thnku_home_next"
+                android:text="@string/home"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/circular_std_book"
+                android:drawableLeft="@drawable/ic_return_right"
+                android:drawablePadding="6dp"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/thank_you_n_for_sharing_n_your_stories"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/now_you_can"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/share_on"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_thanku_fb"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/ic_facebook"/>
+                <ImageView
+                    android:id="@+id/iv_thanku_insta"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/ic_instagram"/>
+
+                <ImageView
+                    android:id="@+id/iv_thanku_twitter"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/ic_twitter"/>
+                <ImageView
+                    android:id="@+id/iv_thanku_whatsapp"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/ic_whatsapp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="47dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/get_a_link"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/download_a_n_qr_code"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/iv_thanku_get_link"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_unlink"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_thanku_qr"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_qr"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/circular_std_book"
+                android:text="@string/manage_your_collections_with_collect"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="57dp"
+                android:layout_marginRight="57dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/made_for_artists_galleries_museums_collectors_curators_and_you"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp"
+                    android:src="@drawable/ic_collect"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+            </LinearLayout>
+
+<!--            <include layout="@layout/custom_bottom_bar" />-->
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

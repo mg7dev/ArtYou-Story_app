@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main_activity"
+        layout="@layout/custom_toolbar" />
+
+    <View
+        android:id="@+id/divider_view_top_main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar_main_activity"
+        android:background="#f1f1f1" />
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider_view_bottom_main"
+        android:layout_below="@+id/divider_view_top_main"
+        tools:context=".activities.MainActivity" />
+
+    <View
+        android:id="@+id/divider_view_bottom_main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_main"
+        android:background="#f1f1f1" />
+
+    <include
+        android:id="@+id/bottom_main"
+        layout="@layout/custom_bottom_bar" />
+
+</RelativeLayout>

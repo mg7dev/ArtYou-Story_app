@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/returnn"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_setting_return_back"
+                    android:padding="5dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:drawablePadding="6dp"
+                    android:drawableLeft="@drawable/return_black"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#f1f1f1"
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Stevejohn"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="@string/marketing"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="31dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="@string/communication_settings"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:layout_marginRight="100dp"
+                        android:text="@string/would_you_like_to_receive_system_emails"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Switch
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="34dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginRight="100dp"
+                        android:text="@string/would_you_like_to_receive_system_emails"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/circular_std_book"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Switch
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/circular_std_book"
+                android:textColor="@color/black"
+                android:text="@string/powered_by_artyou_global"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

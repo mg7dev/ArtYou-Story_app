@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_extra_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/toolbar_extra_activity"
+        layout="@layout/custom_toolbar" />
+
+    <View
+        android:id="@+id/divider_view_top_extra"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar_extra_activity"
+        android:background="#f1f1f1" />
+
+    <FrameLayout
+        android:id="@+id/frame_extra_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider_view_top_extra"
+        android:orientation="vertical"
+        tools:context=".activities.ActivityExtra"/>
+
+
+</RelativeLayout>

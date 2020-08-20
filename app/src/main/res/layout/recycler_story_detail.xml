@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_story_detail_profile_rec"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_user_story_detail_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/card_image" />
+
+        <TextView
+            android:id="@+id/tv_titel_story_detail_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/iv_user_story_detail_rec"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Titel"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sub_titel_story_detail_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/iv_user_story_detail_rec"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Subhead"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/iv_report_rec_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_story_detail_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demo_img" />
+
+    <TextView
+        android:id="@+id/tv_creator_story_detail_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/circular_std_book"
+        android:text="Creator(Artist)"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_detail_story_detail_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/circular_std_book"
+        android:lineSpacingExtra="5dp"
+        android:text="Name of object\nObject type\nMedia Type\nDate\nHeight, width, depth\n\nAdditional infos"
+        android:textColor="#1c1c1b"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
+

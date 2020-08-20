@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentUserCollection">
+
+    <ProgressBar
+        android:id="@+id/pb_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_collection_top_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:drawableLeft="@drawable/return_black"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:padding="5dp"
+                    android:text="@string/returnn"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_collection_top_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:drawableRight="@drawable/ic_return_right"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:padding="5dp"
+                    android:text="@string/next"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/size_collect_transparent"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/circular_std_book"
+                android:gravity="center_vertical"
+                android:text="@string/or_choose_a_object_from_collect"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="33dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_profile_collection"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:text="@string/personal_collection"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_search_collection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="34dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_search_icon"
+                android:drawablePadding="14dp"
+                android:fontFamily="@font/circular_std_book"
+                android:hint="Search by ID, Object name or Inventory"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_choose_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_collection_bottom_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:drawableRight="@drawable/ic_return_right"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/circular_std_book"
+        android:padding="5dp"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+</RelativeLayout>

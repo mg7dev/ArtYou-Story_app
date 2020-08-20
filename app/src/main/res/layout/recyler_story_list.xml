@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/tl_rec_story_list_profile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/iv_rec_story_list_profile"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/card_image" />
+
+        <TextView
+            android:id="@+id/tv_rec_story_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/iv_rec_story_list_profile"
+            android:ellipsize="end"
+            android:fontFamily="@font/circular_std_book"
+            android:singleLine="true"
+            android:text="Titel"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_rec_story_list_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/iv_rec_story_list_profile"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Subhead"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/iv_home_d4_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_rec_story_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demo_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/iv_share_story_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:id="@+id/iv_home_d4_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_heart_2" />
+
+        <ImageView
+            android:id="@+id/iv_home_d4_horizontal_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:rotation="90"
+            android:src="@drawable/menu_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_rec_story_list_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/circular_std_book"
+        android:lineSpacingExtra="2dp"
+        android:ellipsize="end"
+        android:textColor="#3b3b3b"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

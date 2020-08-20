@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_tvqr_qr_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_qr_popup"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_qr_popup"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/blueAccent"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_cancel_qr_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_tvqr_qr_popup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/btn_yellow"
+        android:text="Cancel"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_share_qr_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_tvqr_qr_popup"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/btn_cancel_qr_popup"
+        android:background="@color/blueAccent"
+        android:text="Share"
+        android:textColor="@color/white" />
+</RelativeLayout>

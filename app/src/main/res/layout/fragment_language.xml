@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentLangauge">
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/pb_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_return_back_language"
+                    android:text="@string/returnn"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:drawablePadding="6dp"
+                    android:drawableLeft="@drawable/return_black"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_userprofile_language"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"/>
+
+                <TextView
+                    android:id="@+id/tv_username_language"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="@string/payment_language_and_currency"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="31dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:text="@string/choose_the_language"
+                  android:textColor="@color/black"
+                  android:layout_marginTop="33dp"
+                  android:fontFamily="@font/circular_std_book"
+                  android:textSize="12sp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_language_language"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/choose_the_currency"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_currency_language"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/circular_std_book"
+                android:textColor="@color/black"
+                android:text="powered by Artyou Global"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

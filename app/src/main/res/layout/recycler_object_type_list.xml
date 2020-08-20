@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_rec_type_object"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/circular_std_book"
+    android:foreground="?selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="7dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="8dp"
+    android:text="hello"
+    android:textColor="@color/black">
+
+</TextView>

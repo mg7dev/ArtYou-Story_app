@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_fn_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/et_back_ground"
+            android:hint="First Name"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_ln_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/et_back_ground"
+            android:hint="Last Name"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_confirm_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/btn_yellow"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Confirm"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_cancel_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/blueAccent"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

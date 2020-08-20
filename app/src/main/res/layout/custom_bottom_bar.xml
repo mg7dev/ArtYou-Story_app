@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:id="@+id/iv_custom_bottom_bar_home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_home" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_scanner_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_bar_code" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_complete_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_black_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Complete your history"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_profile_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_custom_bottom_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:src="@drawable/circle_grey" />
+    </FrameLayout>
+
+</LinearLayout>
+
